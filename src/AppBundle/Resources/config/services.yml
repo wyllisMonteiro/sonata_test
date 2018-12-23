@@ -1,0 +1,28 @@
+services:
+    app.admin.project:
+        class: AppBundle\Admin\ProjectAdmin
+        arguments: [~, AppBundle\Entity\Project, Sonata\AdminBundle\Controller\CRUDController]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: Project }
+        public: true
+
+    app.admin.member:
+        class: AppBundle\Admin\MemberAdmin
+        arguments: [~, AppBundle\Entity\Member, Sonata\AdminBundle\Controller\CRUDController]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: Member }
+        public: true
+
+    app.admin.skill:
+        class: AppBundle\Admin\SkillAdmin
+        arguments: [~, AppBundle\Entity\Skill, Sonata\AdminBundle\Controller\CRUDController]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: Skill }
+        public: true
+
+    app.admin.context:
+        class: AppBundle\Admin\ContextAdmin
+        arguments: [~, AppBundle\Entity\Context, Sonata\AdminBundle\Controller\CRUDController]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: Context }
+        public: true

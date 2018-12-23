@@ -1,0 +1,15 @@
+AppBundle\Entity\Skill:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\SkillRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nameSkill:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

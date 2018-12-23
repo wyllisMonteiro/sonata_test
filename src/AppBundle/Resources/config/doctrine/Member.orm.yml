@@ -1,0 +1,18 @@
+AppBundle\Entity\Member:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\MemberRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nameMember:
+            type: string
+            length: 255
+        contactMember:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

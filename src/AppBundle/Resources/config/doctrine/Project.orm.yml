@@ -1,0 +1,21 @@
+AppBundle\Entity\Project:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\ProjectRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titreProj:
+            type: string
+            length: 255
+        lienProj:
+            type: string
+            length: 255
+        descProj:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
